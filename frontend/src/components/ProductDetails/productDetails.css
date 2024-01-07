@@ -1,0 +1,130 @@
+.product-details {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.product-details-images {
+  width: 30%;
+  max-width: 450px;
+}
+
+.product-details-content {
+  width: 70%;
+}
+.product-details-content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .product-details {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-details-images {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .product-details-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-details button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-details-content-other-buttons button {
+    width: 75%;
+  }
+
+  .product-details-content-other-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-details-content-other-buttons button {
+    width: 100%;
+  }
+}
+
+.increase-quantity {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.increase-quantity button,
+input {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.increase-quantity button {
+  background-color: var(--color-dark-purple);
+  color: var(--color-beige);
+}
+
+.increase-quantity input[type="number"] {
+  border: 1px solid var(--color-beige);
+  text-align: center;
+  width: 50px;
+}
+
+.product-name {
+  font-weight: 800;
+  color: var(--color-dark-purple);
+}
+
+.product-category {
+  color: var(--color-indian-red);
+}
+
+.product-price {
+  font-size: 2rem;
+  color: var(--color-indian-red);
+}
+
+.product-details .green {
+  color: green;
+}
+
+.product-details .red {
+  color: red;
+  font-weight: 800;
+}
+
+.product-details-content-other-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.product-details-content-other-buttons button {
+  gap: 0.5rem;
+}
+
+.product-rating,
+.product-stock {
+  border-top: 1px solid var(--color-beige);
+  border-bottom: 1px solid var(--color-beige);
+}
+
+.product-stock {
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  font-family: "Merriweather", serif;
+  margin: 1rem 0;
+}

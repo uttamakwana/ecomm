@@ -1,0 +1,50 @@
+.product-reviews {
+  margin: 3rem 0;
+}
+
+.product-reviews h1 {
+  /* padding: 0 2rem; */
+  margin: 0 2rem;
+  color: var(--color-dark-purple);
+  display: inline;
+  border-bottom: 2px solid var(--color-indian-red);
+  font-size: 2rem;
+}
+
+.product-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.review-card {
+  max-width: 300px;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.review-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.review-card h3 {
+  color: var(--color-dark-purple);
+}
+
+.review-card p {
+  opacity: 0.8;
+}
+
+.no-reviews-yet {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem 0;
+  opacity: 0.8;
+  font-family: "Roboto Condensed", sans-serif;
+  border-bottom: 1px dashed black;
+}

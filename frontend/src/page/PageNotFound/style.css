@@ -1,0 +1,39 @@
+.page-not-found {
+  height: 75vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-not-found h1 {
+  font-size: 3rem;
+  color: var(--color-indian-red);
+}
+
+.page-not-found h3 {
+  font-size: 1.5rem;
+  color: var(--color-dark-purple);
+}
+
+.page-not-found h5 {
+  font-size: 1.25rem;
+  color: var(--color-indian-red);
+}
+
+@media (max-width: 480px) {
+  .page-not-found h1 {
+    font-size: 2rem;
+  }
+
+  .page-not-found h3 {
+    font-size: 1.25rem;
+  }
+
+  .page-not-found h5 {
+    font-size: 1rem;
+  }
+
+  .page-not-found a {
+    padding: 0.75rem;
+    font-size: 1.15rem;
+  }
+}
